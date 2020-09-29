@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+        function check(){
+        var em=document.getElementById("email").value;
+        var ps=document.getElementById("pass").value;
+        if(em==""){
+          alert("enter something");
+         document.getElementById("email").focus();
+            return false;
+        }
+        if(ps==""){
+            alert("enter something");
+         document.getElementById("pass").focus();
+            return false;
+        }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit=" return check()" action="check">
+email:<input type="text" id="email">
+pass:<input type="text" id="pass">
+<input type="submit" value="clickme">
+</form>
+</body>
+
+</html>

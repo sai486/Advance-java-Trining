@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+
+
+function evenOrOdd(num){
+	document.write(arguments[1]+"<br/>");
+	document.write(arguments.length+"<br/>")
+	document.write(evenOrOdd.length+"<br/>")
+	if(num%2==0){
+		return "even";
+	}else{
+		return "odd";
+	}
+}
+
+
+var e = evenOrOdd;
+
+document.writeln(e(10,20,30,40));
+
+var evenOrOdd2 = function(num){
+	if(num%2==0){
+		return "even";
+	}else{
+		return "odd";
+	}
+};
+
+document.writeln(evenOrOdd2(5));
+document.writeln(evenOrOdd2(20));
+</script>
+</head>
+</html>
+
+
+
+
+
+
+
+

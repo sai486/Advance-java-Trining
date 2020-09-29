@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+        <script>
+            function sum(){
+                var x=parseInt(document.getElementById("num1").value);
+                var y=parseInt(document.getElementById("num2").value);
+               var z = document.getElementById("result");
+               z.value =x+y;
+               
+            }
+            function mdown(x) {
+                x.style.color="red";
+                x.style.backgroundColor="black";
+                x.innerHTML = "koona";
+            }
+            function mup(y) {
+                y.style.color="yellow";
+                y.style.backgroundColor="green";
+               y.innerHTML = "koona sai charan kumar";
+            }
+            function mpress(z) {
+                z.style.color="white";
+                z.style.backgroundColor="black";
+                z.innerHTML = " sai charan kumar";
+            }
+            function set() {
+                setTimeout(printdata,3000);                
+            }
+            function printdata() {
+               
+                window.location="http://www.google.com";
+            }
+
+
+        </script>
+    </head>
+    <body onload="set()">
+       
+        num1:<input type="text"  id="num1" >
+        num2:<input type="text"  id="num2">
+        result:<input type="text" id="result">
+        <input type="button" name="add" value="add" onclick="sum()">
+        <input type="text"  onkeydown="mup(this)" onkeyup="mdown(this)" onkeypress="mpress(this)">check the assignment</p>
+        <p >df</p>
+    </body>
+</html>

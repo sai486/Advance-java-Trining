@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="E:\charan\charan\softwares\bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\bootstrap.min.css">
+
+
+<script type="text/javascript">
+// function fun(){
+// 	var x=parseInt(document.getElementById("num1").value);
+// 	var y=parseInt(document.getElementById("num2").value);
+// 	var z = document.getElementById("result");
+// 	z.value=x+y
+// }
+    // var x=parseInt(document.getElementById("num1").value);
+    // var y=parseInt(document.getElementById("num2").value);
+    // var z = document.getElementById("result");
+function add(){
+	   var x=parseInt(document.getElementById("num1").value);
+       var y=parseInt(document.getElementById("num2").value);
+    var z = document.getElementById("result");
+z.value =x+y;
+}
+function sub(){
+	// var x=parseInt(document.getElementById("num1").value);
+	// var y=parseInt(document.getElementById("num2").value);
+	// var z = document.getElementById("result");
+	z.value =x-y;
+	}
+function mul(){
+	// var x=parseInt(document.getElementById("num1").value);
+	// var y=parseInt(document.getElementById("num2").value);
+	// var z = document.getElementById("result");
+	z.value =x*y;
+	}
+function dev(){
+	// var x=parseInt(document.getElementById("num1").value);
+	// var y=parseInt(document.getElementById("num2").value);
+	// var z = document.getElementById("result");
+	z.value =x/y;
+	}
+</script>
+
+</head>
+<body>
+
+<form>
+<div class="jumbotron">
+<table border=1 align ="center" cellpadding="10" bgcolor="wheat">
+<tr><td>NUM1:</td><td><input type="text" name="num1" id="num1"></td></tr>
+<tr><td>NUM2:</td><td><input type="text" name="num2" id="num2"></td></tr>
+<tr><td colspan=2><input  type ="text" id="result"></td></tr>
+<tr>
+<td ><input type="button" onclick="add()" value="add" ></td>
+
+<td  ><input type="submit" onclick="sub()" value="sub" ></td></tr>
+<tr>
+<td ><input type="submit" onclick="mul()" value="mul" ></td>
+
+<td ><input type="submit" onclick="div()" value="div" ></td></tr>
+</table>
+
+</div>
+</form>
+
+</body>
+</html>
